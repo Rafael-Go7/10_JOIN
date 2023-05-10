@@ -1,4 +1,4 @@
-setURL('https://rafael-go7.com/smallest_backend_ever');
+setURL('https://join.rafael-go7.com/smallest_backend_ever');
 
 async function init(){
     await downloadFromServer();
@@ -16,7 +16,7 @@ async function resetPassword() {
             user.password = newPassword.value;
             await backend.setItem('users', JSON.stringify(users));
             resetYourPassword();
-            setTimeout(function(){window.location.href = '/01Join/index.html'} , 3000);
+            setTimeout(function(){window.location.href = '/10_join.rafael-go7.com/index.html'} , 3000);
         } else {
             passwordNotMatch();
             newPassword.value = '';

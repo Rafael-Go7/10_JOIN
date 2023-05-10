@@ -6,8 +6,7 @@ let chosenContacts = [];
 
 /* --BackEnd Anbindung-- */
 
-setURL('https://rafael-go7.com/smallest_backend_ever');
-
+setURL('https://join.rafael-go7.com/smallest_backend_ever');
 
 async function init() {
     await downloadFromServer();

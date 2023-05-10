@@ -1,15 +1,14 @@
 let currentUser = [];
 let currentUserName = [];
 
-setURL('https://rafael-go7.com/smallest_backend_ever');
+setURL('https://join.rafael-go7.com/smallest_backend_ever');
 
 async function init() {
-    console.log('login.js wurde ausgeführt');
     await downloadFromServer();
     users = JSON.parse(backend.getItem('users')) || [];
     messageBoxAnimation();
     rememberMe();
-    
+    console.log('login.js wurde ausgeführt');
 }
 
 function messageBoxAnimation(){

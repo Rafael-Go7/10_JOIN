@@ -11,7 +11,7 @@ async function onSubmit(event){
 }
 
 function action (formData){
-    const input = "https://10_join.rafael-go7.com/php/send_mail.php"
+    const input = "https://join.rafael-go7.com/php/send_mail.php"
     const requestInit ={
         method: 'post',
         body: formData

@@ -1,5 +1,5 @@
 let users  = [];
-setURL('https://rafael-go7.com/smallest_backend_ever');
+setURL('https://join.rafael-go7.com/smallest_backend_ever');
 
 let newID = 0;
 
