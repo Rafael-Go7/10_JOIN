@@ -1,24 +1,13 @@
-*{
-    font-family: 'Inter';
-    font-style: normal;
+body{
+    background: #F6F7F8;
 }
 
-
-.legal {
-    /* height: calc(100vh - 139px); */
+.helpMajor{
     padding-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
     margin-left: 232px;
-    background: #F6F7F8;
-}
-
-.legal h1 {
-    margin: 0;
-    font-weight: 700;
-    font-size: 61px;
-    line-height: 120%;
-    color: #000000;
+    /* height: calc(100vh - 80px); */
 }
 
 .arrow{
@@ -49,40 +38,21 @@
     transform: scale(1.2);
 }
 
-.helpContent {
-    width: 976px;
-}
-
-.explainJoin span {
-    font-weight: 400;
-    font-size: 16px;
-}
-
-.explainHeader {
-    font-weight: 700;
-    font-size: 27px;
-}
-
-.guidanceHeader {
-    font-weight: 700;
-    font-size: 27px;
-}
-
-.firstDash {
-    font-weight: 700;
-    font-size: 27px;
-}
-
-.secondDash {
-    font-weight: 400;
-    font-size: 16px;
+.firstDash{
+    display: flex; 
+    align-items:flex-start;
 }
 
 @media (min-width: 300px) and (max-width: 1050px){
-    
-    .legal {
+
+    .helpMajor{
         padding-top: 150px;
         padding-bottom: 150px;
+        padding-right: 50px;
         margin-left: 0px !important;
+    }
+
+    .arrow{
+        display: none;
     }
 }
