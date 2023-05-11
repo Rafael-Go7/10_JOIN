@@ -20,10 +20,11 @@ body {
 }
 
 .popUpContact {
-    width: 1212px;
+    width: calc(80% - 232px);
     height: 594px;
     position: relative;
     z-index: 1;
+    margin-left: 232px;
 }
 
 .popUpLeft {
@@ -31,16 +32,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-left: 46px;
+    padding-left: 5%;
     gap: 12px;
     border-radius: 30px 0 0 30px;
     isolation: isolate;
 
     position: absolute;
-    width: 463px;
+    width: calc(40% - 5%);
     height: 594px;
-    left: 0px;
-    top: 0px;
 
     background: #2A3647;
 }
@@ -48,23 +47,21 @@ body {
 .logoimg {
     width: 55px;
     height: 66px;
-    position: absolute;
-    bottom: 61%;
     flex: none;
-    order: 3;
+
     flex-grow: 0;
     z-index: 3;
 
 }
 
 .popUpLeftHeader {
-    /* Version 2/t1 */
+
     font-weight: 700;
-    font-size: 61px;
+    font-size: clamp(31px, 5vw, 61px); 
     line-height: 120%;
-    /* or 73px */
+
     color: #FFFFFF;
-    /* Inside auto layout */
+
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -72,15 +69,15 @@ body {
 }
 
 .popUpLeftSubline {
-    /* Version 2/t5 */
+
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 27px;
     line-height: 120%;
-    /* or 32px */
+
     color: #FFFFFF;
-    /* Inside auto layout */
+
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -91,13 +88,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 12px;
     border-radius: 0 30px 30px 0 ;
     isolation: isolate;
 
     position: absolute;
-    width: 749px;
+    width: 60%;
+
     height: 594px;
     right: 0px;
     top: 0px;
@@ -120,11 +118,8 @@ body {
 }
 
 .popUpRightImg {
-    position: absolute;
     width: 120px;
     height: 120px;
-    left: 10%;
-    top: 37%;
 }
 
 .popUpRightImgBG {
@@ -141,11 +136,8 @@ body {
     height: 120px;
 
     background: #D1D1D1;
-    /* white */
 
     border: 3px solid #FFFFFF;
-    /* nuevo */
-
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 }
@@ -162,27 +154,25 @@ body {
     padding: 0px;
     gap: 35px;
 
-    position: absolute;
     height: 271px;
-    width: 422px;
-    right: 10%;
-
+    width: 80%;
 }
 
 .input {
     box-sizing: border-box;
-    /* Auto layout */
+
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 422px;
+    width: 100%;
+
     height: 51px;
     padding: 13px 21px;
     background: #FFFFFF;
-    /* Style */
+
     border: 1px solid #D1D1D1;
     border-radius: 10px;
-   /* or 25px */    
+
 }
 
 .input input {
@@ -212,39 +202,26 @@ input[type=number] {
 
 .popUpButton {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 0px;
     gap: 25px;
 
-    width: 369px;
+    width: 100%;
     height: 61px;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 
 .cancelBtn {
     box-sizing: border-box;
-
-    /* Auto layout */
 
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 18px 10px;
-    gap: 10px;
 
-    width: 136px;
+    width: 35%;
     height: 61px;
-
-    /* Version 2/ main color */
 
     background-color: #fff;
     border: 1px solid #2A3647;
@@ -253,14 +230,8 @@ input[type=number] {
     font-weight: 400;
     font-size: 21px;
     line-height: 120%;
-    /* or 25px */
-
-
-    /* Version 2/ main color */
 
     color: #2A3647;
-
-    /* Inside auto layout */
 
     flex: none;
     order: 0;
@@ -292,7 +263,6 @@ input[type=number] {
 }
 
 .createBtn {
-    /* Auto layout */
 
     display: flex;
     flex-direction: row;
@@ -301,7 +271,7 @@ input[type=number] {
     padding: 18px 10px;
     gap: 10px;
 
-    width: 208px;
+    width: 55%;
     height: 61px;
 
     background: #2A3647;
@@ -311,9 +281,9 @@ input[type=number] {
     font-weight: 700;
     font-size: 21px;
     line-height: 120%;
-    /* or 25px */
+
     color: #FFFFFF;
-    /* Inside auto layout */
+
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -430,3 +400,34 @@ input[type=number] {
 	}
 }
 
+
+    /* ----- RESPONSIVE DESIGN ----- */
+
+
+@media (min-width: 300px) and (max-width: 1050px){
+
+    .popUpContact{
+        /* display: flex;
+        flex-direction: column; */
+        margin-left: 0;
+        width: 80%;
+    }
+
+    .popUpLeft{
+        display: none;
+    }
+
+    .popUpRight{
+        border-radius: 30px;
+        width: 100%;
+    }
+
+    .cancelBtn{
+        font-size: clamp(18px, 3vw, 21px);
+      
+    }
+
+    .createBtn{
+        font-size: clamp(18px, 3vw, 21px);
+    }
+}
