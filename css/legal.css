@@ -85,4 +85,8 @@
         padding-bottom: 150px;
         margin-left: 0px !important;
     }
+
+    .arrow{
+        display: none;
+    }
 }

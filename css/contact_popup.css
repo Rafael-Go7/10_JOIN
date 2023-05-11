@@ -56,6 +56,7 @@ body {
     z-index: 3;
 
 }
+
 .popUpLeftHeader {
     /* Version 2/t1 */
     font-weight: 700;
@@ -209,7 +210,6 @@ input[type=number] {
     -moz-appearance:textfield; /* Firefox */
 }
 
-
 .popUpButton {
     display: flex;
     flex-direction: row;
@@ -291,7 +291,6 @@ input[type=number] {
     filter: invert(6%) sepia(33%) saturate(4369%) hue-rotate(204deg) brightness(94%) contrast(95%);
 }
 
-
 .createBtn {
     /* Auto layout */
 
@@ -359,6 +358,7 @@ input[type=number] {
     display: flex ;
     animation: fade-in 600ms ease-in-out;
 }
+
 .fadeout{
     animation: fade-out 600ms ease-in-out;
 }
@@ -371,6 +371,9 @@ input[type=number] {
 .slideoutsmall{
     animation: slide-out 600ms ease-in-out;
 }
+
+
+    /* ----- KEY FRAMES ----- */
 
 
 @keyframes slide-in {
