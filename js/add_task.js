@@ -434,17 +434,6 @@ function addNewTask() {
         "category": "TASKS_todo"
     }
 
-
-    // "ID": 0,
-    // "titles": "Neue Webseite - online Termin",
-    // "descriptions": "Neue JavaScript Funktionen und Spezial-Effekte müssen noch eingebaut werden",
-    // "labels": "Design",
-    // "Personell": "Front-End Developer",
-    // "Dates": "2023-06-01",
-    // "Priorities": "Urgent",
-    // // "Subtasks": subtask,
-    // "category": "TASKS_todo",
-
     tasks.push(task);
     console.log(tasks);
     checkForCategory();

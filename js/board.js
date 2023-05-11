@@ -107,34 +107,6 @@ function removeHighlight (id) {
 }
 
 
-// /**
-//  * This function shows only one empty task container
-//  * @param {number} n - This is the position, where container should be shown
-//  */
-// function highlightDrop(n){
-//     let taskIds = ['toDo','inProgress','awaitingFeedback','done'];
-//     if(tasks[currentDraggedElement]['taskStatus'] == taskIds[n]){
-//     } else {
-//         taskIds.splice(n,1);
-//         for (let i = 0; i < taskIds.length; i++) {
-//             let id = taskIds[i];
-//             document.getElementById(`onDragTask${id}`).classList.add('dNone');
-//         }
-//     }
-// }
-
-
-// /**
-//  * This function is used to create empty task container
-//  * @param {string} id - This is the task status, where the container should be build
-//  * @returns HTML code of empty task container
-//  */
-// function createOnDragTask(id) {
-//     return `<div class="onDrag dNone" id="onDragTask${id}"></div>`;
-// }
-
-
-
 /* --Drag'N Drop Funktionen-- */
 
 
@@ -182,7 +154,6 @@ function updateHTML() {            // diese Renderfunktion filtert die Objekte d
         // console.log(open);
         document.getElementById('TASKS_todo').innerHTML += templatePostit(element, i); renderPostit_Assignees(element, i);
         
-        // document.getElementById(`postIt_Labels${i}`).style.backgroundColor = tasks[i]['labelColor'];
     }
 
 
@@ -193,8 +164,7 @@ function updateHTML() {            // diese Renderfunktion filtert die Objekte d
     for (let i = 0; i < TASKS_inProgress.length; i++) {
         const element = TASKS_inProgress[i];
         document.getElementById('TASKS_inProgress').innerHTML += templatePostit(element, i); renderPostit_Assignees(element, i);
-    
-        // document.getElementById(`postIt_Labels${i}`).style.backgroundColor = tasks[i]['labelColor'];
+
     }
 
 
@@ -205,8 +175,7 @@ function updateHTML() {            // diese Renderfunktion filtert die Objekte d
     for (let i = 0; i < TASKS_awaitingFeedback.length; i++) {
         const element = TASKS_awaitingFeedback[i];
         document.getElementById('TASKS_awaitingFeedback').innerHTML += templatePostit(element, i); renderPostit_Assignees(element, i);
-    
-        // document.getElementById(`postIt_Labels${i}`).style.backgroundColor = tasks[i]['labelColor'];
+
     }
 
 
@@ -217,12 +186,11 @@ function updateHTML() {            // diese Renderfunktion filtert die Objekte d
     for (let i = 0; i < TASKS_done.length; i++) {
         const element = TASKS_done[i];
         document.getElementById('TASKS_done').innerHTML += templatePostit(element, i); renderPostit_Assignees(element, i);
-    
-        // document.getElementById(`postIt_Labels${i}`).style.backgroundColor = tasks[i]['labelColor'];
+
     }
     
 }
-// style="background-color: ${element['labelColor']}
+
 
 function templatePostit(element,i) {
     return `

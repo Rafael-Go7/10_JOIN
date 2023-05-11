@@ -380,7 +380,7 @@ body {
 }
 
 .Low {
-    background-image: url('assets/img/prio-low.svg');
+    background-image: url('/assets/img/prio-low.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -389,7 +389,7 @@ body {
 }
 
 .Medium {
-    background-image: url('assets/img/prio-medium.svg');
+    background-image: url('/assets/img/prio-medium.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -398,7 +398,7 @@ body {
 }
 
 .Urgent {
-    background-image: url('assets/img/prio-urgent.svg');
+    background-image: url('/assets/img/prio-urgent.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -748,7 +748,7 @@ body {
 }
 
 .PopUp_Low {
-    background-image: url('assets/img/cardLow.svg');
+    background-image: url('/assets/img/cardLow.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: fill;
@@ -762,7 +762,7 @@ body {
 }
 
 .PopUp_Medium {
-    background-image: url('assets/img/cardMedium.svg');
+    background-image: url('/assets/img/cardMedium.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: fill !important;
@@ -776,7 +776,7 @@ body {
 }
 
 .PopUp_Urgent {
-    background-image: url('assets/img/cardUrgent.svg');
+    background-image: url('/assets/img/cardUrgent.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: fill;
