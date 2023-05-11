@@ -227,12 +227,18 @@ function renderOpenContact(contact, i){
 function renderOpenContactmobile(contact, i){
     return`    
                     <div class="conttent">
-                        <div class="content-sel-headern"><span>Kanban Project Management Tool</span></div>
-                        <div class="content-sel-headerm">
-                                <span>Contacts</span>
-                                <span class="content-sel-headermm">Better with a Team</span>
-                        </div>
-                        <img src="assets/img/arrowleft.svg" onclick="backToContactList()" class="backarrow">
+                            <span>Kanban Project Management Tool</span>
+                            <div class="contact-header">
+                                <div class="conntent-headerFirst">
+                                    <span class="contact-header-name">Contacts</span>
+                                    <img src="assets/img/arrowleft.svg" onclick="backToContactList()" class="backarrow">
+                                </div>
+                                <div class="contact-header-description">
+                                    <div class="contact-line"> </div>
+                                    <span>Better with a team</span>
+                                </div>
+                            </div>     
+                        
                     </div>
                     <div class="blueunderline"> </div>
                     <div class="contact-sel-content">
