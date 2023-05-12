@@ -18,11 +18,11 @@
 }
 
 .popUpContactE {
-    width: 1212px;
+    width: calc(80% - 232px);
     height: 594px;
-
-
     position: relative;
+    z-index: 10;
+    margin-left: 232px;
 }
 
 .popUpLeftE {
@@ -30,16 +30,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-left: 46px;
+    padding-left: 5%;
     gap: 12px;
     border-radius: 30px 0 0 30px;
     isolation: isolate;
 
     position: absolute;
-    width: 463px;
+    width: calc(40% - 5%);
     height: 594px;
-    left: 0px;
-    top: 0px;
 
     background: #2A3647;
 }
@@ -47,23 +45,21 @@
 .logoimgE {
     width: 55px;
     height: 66px;
-    position: absolute;
-    bottom: 61%;
     flex: none;
-    order: 3;
+   
     flex-grow: 0;
     z-index: 3;
 
 }
 
 .popUpLeftHeaderE {
-    /* Version 2/t1 */
+
     font-weight: 700;
-    font-size: 61px;
+    font-size: clamp(31px, 5vw, 61px); 
     line-height: 120%;
-    /* or 73px */
+
     color: #FFFFFF;
-    /* Inside auto layout */
+
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -71,15 +67,15 @@
 }
 
 .popUpLeftSublineE {
-    /* Version 2/t5 */
+
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 27px;
     line-height: 120%;
-    /* or 32px */
+
     color: #FFFFFF;
-    /* Inside auto layout */
+
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -90,13 +86,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 12px;
     border-radius: 0 30px 30px 0 ;
     isolation: isolate;
 
     position: absolute;
-    width: 749px;
+
+    width: 60%;
     height: 594px;
     right: 0px;
     top: 0px;
@@ -119,11 +116,8 @@
 }
 
 .popUpRightImgE {
-    position: absolute;
     width: 120px;
     height: 120px;
-    left: 10%;
-    top: 37%;
 }
 
 .popUpRightImgBGE {
@@ -131,13 +125,20 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 0px;
     gap: 10px;
+
+    position: absolute;
     width: 120px;
     height: 120px;
+
     background: #FFFFFF;
+
     border: 3px solid #FFFFFF;
+    
     box-shadow: 0px 0px 4px rgb(0 0 0 / 10%);
     border-radius: 70px;
+    
     font-weight: 500;
     font-size: 47px;
     line-height: 120%;
@@ -157,27 +158,25 @@
     padding: 0px;
     gap: 35px;
 
-    position: absolute;
     height: 271px;
-    width: 422px;
-    right: 10%;
-
+    width: 80%;
 }
 
 .inputE {
     box-sizing: border-box;
-    /* Auto layout */
+
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 422px;
+
+    width: 100%;
     height: 51px;
     padding: 13px 21px;
     background: #FFFFFF;
-    /* Style */
+
     border: 1px solid #D1D1D1;
     border-radius: 10px;
-   /* or 25px */    
+
 }
 
 .inputE input {
@@ -208,33 +207,26 @@ inputE[type=number] {
 .popUpButtonE {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     padding: 0px;
     gap: 25px;
 
-    width: 369px;
+    width: 100%;
     height: 61px;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 
 .saveBtnE {
-    /* Auto layout */
-
+    /* box-sizing: border-box; */
+ 
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 18px 10px;
-    gap: 10px;
+    /* gap: 10px; */
 
-    width: 143px;
+    width: 40%;
     height: 61px;
 
     background: #2A3647;
@@ -244,35 +236,47 @@ inputE[type=number] {
     font-weight: 700;
     font-size: 21px;
     line-height: 120%;
-    /* or 25px */
+
     color: #FFFFFF;
-    /* Inside auto layout */
+
     flex: none;
     order: 1;
     flex-grow: 0;
     transition: 200ms;
 }
 .deleteBtnE{
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 18px 10px;
     gap: 10px;
-    width: 136px;
+
+    width: 25%;
     height: 61px;
+
     background-color: #fff;
-    border: 1px solid #2A3647;
     border-radius: 10px;
+    border: 1px solid #2A3647;
+
     font-weight: 400;
     font-size: 21px;
     line-height: 120%;
+
     color: #2A3647;
+
     flex: none;
     order: 0;
     flex-grow: 0;
     transition: 200ms;
+}
+
+.deleteBtnE:hover{
+    cursor: pointer;
+    color: #29ABE2;
+    border-color: #29ABE2; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .buttonE:hover {
@@ -345,6 +349,39 @@ inputE[type=number] {
       opacity: 0;
     }
   }
+
+
+    /* ----- RESPONSIVE DESIGN ----- */
+
+
+@media (min-width: 300px) and (max-width: 1050px){
+
+    .popUpContactE{
+        /* display: flex;
+        flex-direction: column; */
+        margin-left: 0;
+        width: 80%;
+        max-height: calc(100% - 160px);
+        overflow-y: auto;
+    }
+
+    .popUpLeftE{
+        display: none;
+    }
+
+    .popUpRightE{
+        border-radius: 30px;
+        width: 100%;
+    }
+
+    .deleteBtnE{
+        font-size: clamp(18px, 3vw, 21px);
+    }
+
+    .saveBtnE{
+        font-size: clamp(18px, 3vw, 21px);
+    }
+}
 
 
 
