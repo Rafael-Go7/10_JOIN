@@ -174,7 +174,7 @@ body{
     font-size: 21px;
     line-height: 120%;
     transition: 200ms;
-    /* z-index: 5; */
+   
 }
 
 .buttonn:hover {
@@ -804,7 +804,7 @@ body{
         display: flex !important;
         position: fixed !important;
         top: 15%;
-        z-index: 5;
+       
     }
 
     .button{
